@@ -37,28 +37,3 @@ export default function Navigation() {
     </nav>
   );
 }
-
-// const Navigation = ({ isAuthenticated }) => (
-//   <nav>
-//     <NavLink to="/" exact style={styles.link} activeStyle={styles.activeLink}>
-//       Главная
-//     </NavLink>
-
-//     {isAuthenticated && (
-//       <NavLink
-//         to="/contacts"
-//         exact
-//         style={styles.link}
-//         activeStyle={styles.activeLink}
-//       >
-//         Контакты
-//       </NavLink>
-//     )}
-//   </nav>
-// );
-
-// const mapStateToProps = state => ({
-//   isAuthenticated: authSelectors.getIsAuthenticated(state),
-// });
-
-// export default connect(mapStateToProps)(Navigation);

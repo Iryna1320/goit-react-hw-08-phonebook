@@ -36,35 +36,3 @@ export default function UserMenu() {
     </div>
   );
 }
-
-// const mapStateToProps = state => ({
-//   name: authSelectors.getUserName(state),
-//   avatar: defaultAvatar,
-// });
-
-// const mapDispatchToProps = {
-//   onLogout: authOperations.logOut,
-// };
-
-// export default connect(mapStateToProps, mapDispatchToProps)(UserMenu);
-
-// const UserMenu = ({ avatar, name, onLogout }) => (
-//   <div style={styles.container}>
-//     <img src={avatar} alt="" width="32" style={styles.avatar} />
-//     <span style={styles.name}>Welcome, {name}</span>
-//     <Button type="button" variant="primary" onClick={onLogout}>
-//       Logout
-//     </Button>
-//   </div>
-// );
-
-// const mapStateToProps = state => ({
-//   name: authSelectors.getUserName(state),
-//   avatar: defaultAvatar,
-// });
-
-// const mapDispatchToProps = {
-//   onLogout: authOperations.logOut,
-// };
-
-// export default connect(mapStateToProps, mapDispatchToProps)(UserMenu);

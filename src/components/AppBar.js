@@ -24,16 +24,3 @@ export default function AppBar() {
     </header>
   );
 }
-
-// const AppBar = ({ isAuthenticated }) => (
-//   <header style={styles.header}>
-//     <Navigation />
-//     {isAuthenticated ? <UserMenu /> : <AuthNav />}
-//   </header>
-// );
-
-// const mapStateToProps = state => ({
-//   isAuthenticated: authSelectors.getIsAuthenticated(state),
-// });
-
-// export default connect(mapStateToProps)(AppBar);

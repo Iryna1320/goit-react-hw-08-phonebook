@@ -22,10 +22,6 @@ const styles = {
 };
 
 export default function ContactsView() {
-  // componentDidMount() {
-  //   this.props.fetchContacts();
-  // }
-
   const dispatch = useDispatch();
   const isLoadingContacts = useSelector(contactsSelectors.getLoading);
 
@@ -48,44 +44,3 @@ export default function ContactsView() {
     </Container>
   );
 }
-
-// const mapStateToProps = state => ({
-//   isLoadingContacts: contactsSelectors.getLoading(state),
-// });
-
-// const mapDispatchToProps = dispatch => ({
-//   fetchContacts: () => dispatch(contactsOperations.fetchContacts()),
-// });
-
-// class ContactsView extends Component {
-//   componentDidMount() {
-//     this.props.fetchContacts();
-//   }
-
-//   render() {
-//     return (
-//       <Container>
-//         <div style={styles.containerBox}>
-//           <h1 style={styles.title}>Phonebook</h1>
-//           <ContactForm />
-
-//           <h2 style={styles.title}>Contacts</h2>
-//           {this.props.isLoadingContacts && <h1>Loading...</h1>}
-//           <Filter />
-
-//           <ContactList />
-//         </div>
-//       </Container>
-//     );
-//   }
-// }
-
-// const mapStateToProps = state => ({
-//   isLoadingContacts: contactsSelectors.getLoading(state),
-// });
-
-// const mapDispatchToProps = dispatch => ({
-//   fetchContacts: () => dispatch(contactsOperations.fetchContacts()),
-// });
-
-// export default connect(mapStateToProps, mapDispatchToProps)(ContactsView);
