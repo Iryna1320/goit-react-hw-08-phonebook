@@ -38,9 +38,11 @@ export default function App() {
           <PublicRoute exact path="/">
             <HomeView />
           </PublicRoute>
+
           <PublicRoute path="/register" restricted redirectTo="/contacts">
             <RegisterView />
           </PublicRoute>
+
           <PublicRoute path="/login" restricted redirectTo="/contacts">
             <LoginView />
           </PublicRoute>

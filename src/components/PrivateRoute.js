@@ -8,7 +8,12 @@ import { authSelectors } from '../redux/auth';
  * - В противном случае рендерит Redirect на /login
  */
 
-export default function PrivateRoute({ redirectTo, children, ...routeProps }) {
+export default function PrivateRoute({
+  getIsAuthenticated,
+  redirectTo,
+  children,
+  ...routeProps
+}) {
   const isLoggedIn = useSelector(authSelectors.getIsAuthenticated);
 
   return (

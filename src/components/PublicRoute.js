@@ -7,7 +7,12 @@ import { authSelectors } from '../redux/auth';
  * - Если маршрут ограниченный, и пользователь залогинен, рендерит редирект на /todos
  * - В противном случае рендерит компонент
  */
-export default function PublicRoute({ redirectTo, children, ...routeProps }) {
+export default function PublicRoute({
+  getIsAuthenticated,
+  redirectTo,
+  children,
+  ...routeProps
+}) {
   const isLoggedIn = useSelector(authSelectors.getIsAuthenticated);
 
   return (
